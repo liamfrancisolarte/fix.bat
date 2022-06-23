@@ -2,6 +2,9 @@
 Echo Please Wait...
 Echo Save your Work Now Please.
 pause
+Echo To Run Chkdsk Type Y And Then Press Enter...
+Echo To Not Run Chkdsk Type N And Then Press Enter...
+chkdsk /r
 sfc /scannow
 Dism /Online /Cleanup-Image /RestoreHealth
 sfc /scannow
