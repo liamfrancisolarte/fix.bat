@@ -5,6 +5,9 @@ pause
 Echo To Run Chkdsk Type Y And Then Press Enter...
 Echo To Not Run Chkdsk Type N And Then Press Enter...
 chkdsk /r
+Echo Restart To Run Chkdsk?
+pause
+Shutdown -r -t 10 -c Running Chkdsk
 sfc /scannow
 Dism /Online /Cleanup-Image /RestoreHealth
 sfc /scannow
